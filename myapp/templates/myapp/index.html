@@ -1,0 +1,9 @@
+{% extends "myapp/base.html" %}
+{% block title %}
+    <div class = "h1">マイページ</div>
+{% endblock %}
+{% block content %}
+    <h1>トップ</h1>
+    <p><a href = "{% url 'myapp:login' %}"> ユーザ作成</a></p>
+    <p><a href = "{% url 'myapp:signin' %}"> ログイン</a></p>
+{% endblock %}
